@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ABC Car Rental Application</h1>
+    </header>
+
+    <main>
+        <section id="car-listing">
+            <h2>Pilih Mobil</h2>
+            <div class="car-item">
+                <img src="/images/avanza.png" alt="Toyota Avanza">
+                <h3>Toyota Avanza</h3>
+                <p>Rp 500.000 / hari</p>
+                <div class="car-controls">
+                    <input type="checkbox" id="avanza">
+                    <label for="avanza">Rent this Car</label>
+                    <input type="date" id="avanza-start-date" placeholder="Tanggal Mulai">
+                    <input type="number" id="avanza-duration" min="1" placeholder="Durasi (hari)">
+                </div>
+            </div>
+            <div class="car-item">
+                <img src="/images/innova.png" alt="Toyota Kijang Innova">
+                <h3>Toyota Kijang Innova</h3>
+                <p>Rp 700.000 / hari</p>
+                <div class="car-controls">
+                    <input type="checkbox" id="innova">
+                    <label for="innova">Rent this Car</label>
+                    <input type="date" id="innova-start-date" placeholder="Tanggal Mulai">
+                    <input type="number" id="innova-duration" min="1" placeholder="Durasi (hari)">
+                </div>
+            </div>
+            <div class="car-item">
+                <img src="/images/hrv.png" alt="Honda HRV">
+                <h3>Honda HRV</h3>
+                <p>Rp 600.000 / hari</p>
+                <div class="car-controls">
+                    <input type="checkbox" id="hrv">
+                    <label for="hrv">Rent this Car</label>
+                    <input type="date" id="hrv-start-date" placeholder="Tanggal Mulai">
+                    <input type="number" id="hrv-duration" min="1" placeholder="Durasi (hari)">
+                </div>
+            </div>
+            <div class="car-item">
+                <img src="/images/sigra.png" alt="Daihatsu Sigra">
+                <h3>Daihatsu Sigra</h3>
+                <p>Rp 450.000 / hari</p>
+                <div class="car-controls">
+                    <input type="checkbox" id="sigra">
+                    <label for="sigra">Rent this Car</label>
+                    <input type="date" id="sigra-start-date" placeholder="Tanggal Mulai">
+                    <input type="number" id="sigra-duration" min="1" placeholder="Durasi (hari)">
+                </div>
+            </div>
+        </section>
+
+        <section id="customer-form">
+            <h2>Customer Details</h2>
+            <label for="customer-name">Name:</label>
+            <input type="text" id="customer-name" placeholder="Enter your name">
+            <button id="calculate-total">Calculate Total</button>
+        </section>
+
+        <section id="rental-summary">
+            <h2>Rental Summary</h2>
+            <div id="summary-details">
+                </div>
+            <h3>Total Price: <span id="total-price">Rp 0</span></h3>
+        </section>
+
+        <section id="order-management">
+            <h2>Order Management</h2>
+            <button id="save-order">Save Order</button>
+            <h3>Past Orders</h3>
+            <ul id="past-orders">
+                </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
